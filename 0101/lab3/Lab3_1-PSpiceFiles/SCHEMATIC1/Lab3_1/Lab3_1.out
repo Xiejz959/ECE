@@ -1,7 +1,7 @@
-
-**** 09/29/25 10:49:59 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\Lab3_1-PSpiceFiles\SCHEMATIC1\Lab3_1.sim ] 
+**** 09/29/25 11:21:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\lab3_1-pspicefiles\schematic1\lab3_1.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -30,22 +30,22 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source LAB3_1
-R_R1         N00229 N00236  20 TC=0,0 
-V_V1         N00225 0 DC 5  
+R_R1         N00229 N00236  10 TC=0,0 
+V_V1         0 N00225 DC 30  
 R_R2         N00225 N00229  10 TC=0,0 
 R_R3         N00236 N00403  20 TC=0,0 
 R_R4         N00236 N00375  20 TC=0,0 
 R_R5         0 N00403  10 TC=0,0 
 R_R6         0 N00236  10 TC=0,0 
-I_I1         N00236 0 DC 5  
+I_I1         0 N00236 DC 5  
 V_V2         N00375 N00403 DC 20  
 
 **** RESUMING Lab3_1.cir ****
 .END
 
-**** 09/29/25 10:49:59 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/29/25 11:21:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\Lab3_1-PSpiceFiles\SCHEMATIC1\Lab3_1.sim ] 
+ ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\lab3_1-pspicefiles\schematic1\lab3_1.sim ] 
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -58,9 +58,9 @@ V_V2         N00375 N00403 DC 20
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00225)    5.0000 (N00229)   -4.5455 (N00236)  -23.6360 (N00375)    3.1818     
+(N00225)  -30.0000 (N00229)   -5.0000 (N00236)   20.0000 (N00375)   25.0000     
 
-(N00403)  -16.8180 
+(N00403)    5.0000 
 
 
 
@@ -68,18 +68,18 @@ V_V2         N00375 N00403 DC 20
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -9.545E-01
-    V_V2        -1.341E+00
+    V_V1        -2.500E+00
+    V_V2        -2.500E-01
 
-    TOTAL POWER DISSIPATION   3.16E+01  WATTS
+    TOTAL POWER DISSIPATION   8.00E+01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 09/29/25 10:49:59 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 09/29/25 11:21:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\Lab3_1-PSpiceFiles\SCHEMATIC1\Lab3_1.sim ] 
+ ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\lab3_1-pspicefiles\schematic1\lab3_1.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -89,5 +89,5 @@ V_V2         N00375 N00403 DC 20
 
 
 
-  Total job time (using Solver 1)   =         .02
+  Total job time (using Solver 1)   =        0.00
 

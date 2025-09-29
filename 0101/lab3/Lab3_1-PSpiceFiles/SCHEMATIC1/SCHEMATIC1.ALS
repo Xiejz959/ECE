@@ -1,11 +1,11 @@
 .ALIASES
 R_R1            R1(1=N00229 2=N00236 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS26@ANALOG.R.Normal(chips)
-V_V1            V1(+=N00225 -=0 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS87@SOURCE.VSRC.Normal(chips)
+V_V1            V1(+=0 -=N00225 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS87@SOURCE.VSRC.Normal(chips)
 R_R2            R2(1=N00225 2=N00229 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS120@ANALOG.R.Normal(chips)
 R_R3            R3(1=N00236 2=N00403 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS161@ANALOG.R.Normal(chips)
 R_R4            R4(1=N00236 2=N00375 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS177@ANALOG.R.Normal(chips)
 R_R5            R5(1=0 2=N00403 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS193@ANALOG.R.Normal(chips)
 R_R6            R6(1=0 2=N00236 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS209@ANALOG.R.Normal(chips)
-I_I1            I1(+=N00236 -=0 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS312@SOURCE.ISRC.Normal(chips)
+I_I1            I1(+=0 -=N00236 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS312@SOURCE.ISRC.Normal(chips)
 V_V2            V2(+=N00375 -=N00403 ) CN @LAB3_1.SCHEMATIC1(sch_1):INS575@SOURCE.VSRC.Normal(chips)
 .ENDALIASES
