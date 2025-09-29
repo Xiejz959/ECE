@@ -1,0 +1,57 @@
+
+**** 09/29/25 10:47:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Lab3_1"  [ D:\PSPICE\Lab3_1-PSpiceFiles\SCHEMATIC1\Lab3_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab3_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of D:\Cadence\SPB_Data\\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB3_1
+R_R1         N00229 N00236  20 TC=0,0 
+V_V1         N00225 GND_POWER DC 5  
+R_R2         N00225 N00229  10 TC=0,0 
+R_R3         N00236 N00403  20 TC=0,0 
+R_R4         N00236 N00375  20 TC=0,0 
+R_R5         GND_POWER N00403  10 TC=0,0 
+R_R6         GND_POWER N00236  10 TC=0,0 
+I_I1         N00236 GND_POWER DC 5  
+V_V2         N00375 N00403 DC 20  
+
+**** RESUMING Lab3_1.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00229 is floating
+
+ERROR(ORPSIM-15142): Node N00236 is floating
+
+ERROR(ORPSIM-15142): Node N00225 is floating
+
+ERROR(ORPSIM-15142): Node GND_POWER is floating
+
+ERROR(ORPSIM-15142): Node N00403 is floating
+
+ERROR(ORPSIM-15142): Node N00375 is floating
+
