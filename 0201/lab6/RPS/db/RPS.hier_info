@@ -1,0 +1,26 @@
+|RPS
+A[0] => WA.IN0
+A[0] => WA.IN0
+A[0] => WA.IN0
+A[0] => WA.IN0
+A[0] => WA.IN0
+A[1] => WA.IN1
+A[1] => WA.IN1
+A[1] => WA.IN0
+A[1] => WA.IN1
+A[1] => WA.IN1
+B[0] => WA.IN0
+B[0] => WA.IN0
+B[0] => WA.IN1
+B[0] => WA.IN0
+B[0] => WA.IN0
+B[1] => WA.IN1
+B[1] => WA.IN1
+B[1] => WA.IN1
+B[1] => WA.IN1
+B[1] => WA.IN1
+WA <= WA.DB_MAX_OUTPUT_PORT_TYPE
+WB <= WB.DB_MAX_OUTPUT_PORT_TYPE
+E <= WA.DB_MAX_OUTPUT_PORT_TYPE
+
+
