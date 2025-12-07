@@ -1,0 +1,24 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY hex_display_decoder IS
+    PORT (
+        X       : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);  -- input
+        Y       : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)   -- output
+    );
+END hex_display_decoder;
+
+ARCHITECTURE behavioral OF hex_display_decoder IS
+BEGIN
+    Y <= "11000000" WHEN X = "0000" ELSE  -- 0
+         "11111001" WHEN X = "0001" ELSE  -- 1
+         "10100100" WHEN X = "0010" ELSE  -- 2
+         "10110000" WHEN X = "0011" ELSE  -- 3
+         "10011001" WHEN X = "0100" ELSE  -- 4
+         "10010010" WHEN X = "0101" ELSE  -- 5
+         "10000010" WHEN X = "0110" ELSE  -- 6
+         "11111000" WHEN X = "0111" ELSE  -- 7
+         "10000000" WHEN X = "1000" ELSE  -- 8
+         "10010000" WHEN X = "1001" ELSE  -- 9
+         "11111111";
+END behavioral;

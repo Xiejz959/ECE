@@ -1,0 +1,72 @@
+# Reading D:/IntelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do MUX4bit4to1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/IntelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FPGA/Lab7/lab7_part3/MUX4bit4to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:48:26 on Dec 07,2025
+# vcom -reportprogress 300 -93 -work work D:/FPGA/Lab7/lab7_part3/MUX4bit4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX4bit4to1
+# -- Compiling architecture comb of MUX4bit4to1
+# End time: 17:48:26 on Dec 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.mux4bit4to1
+# vsim work.mux4bit4to1 
+# Start time: 17:48:31 on Dec 07,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux4bit4to1(comb)
+do D:/FPGA/Lab7/lab7_part3/simulation/modelsim/test.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:52:42 on Dec 07,2025
+# vcom -reportprogress 300 ../MUX4bit4to1.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "../MUX4bit4to1.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 17:52:42 on Dec 07,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/IntelFPGA_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro D:\FPGA\Lab7\lab7_part3\simulation\modelsim\test.do line 4
+# D:/IntelFPGA_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom ../MUX4bit4to1.vhd"
+do D:/FPGA/Lab7/lab7_part3/simulation/modelsim/test.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:53:17 on Dec 07,2025
+# vcom -reportprogress 300 D:/FPGA/Lab7/lab7_part3/MUX4bit4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX4bit4to1
+# -- Compiling architecture comb of MUX4bit4to1
+# End time: 17:53:17 on Dec 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:53:17 on Dec 07,2025, Elapsed time: 0:04:46
+# Errors: 4, Warnings: 0
+# vsim -voptargs=""+acc"" work.MUX4bit4to1 
+# Start time: 17:53:18 on Dec 07,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux4bit4to1(comb)
+# End time: 17:57:38 on Dec 07,2025, Elapsed time: 0:04:20
+# Errors: 0, Warnings: 0
