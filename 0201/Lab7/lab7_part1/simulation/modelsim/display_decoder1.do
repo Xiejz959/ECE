@@ -1,0 +1,48 @@
+
+vsim -voptargs=+acc work.display_decoder
+
+add wave *
+
+# BCD 0: X = 0000
+force x b"0000"
+run 100
+
+#BCD 1: X = 0001
+force X b"0001"
+run 100
+
+#BCD 2: X = 0010
+force X b"0010"
+run 100
+
+#BCD 3: X = 0011
+force X b"0011"
+run 100
+
+#BCD 4: X = 0100
+force X b"0100"
+run 100
+
+#BCD 5: X = 0101
+force X b"0101"
+run 100
+
+#BCD 6: X = 0110
+force X b"0110"
+run 100
+
+#BCD 7: X = 0111
+force X b"0111"
+run 100
+
+#BCD 8: X = 1000
+force X b"1000"
+run 100
+
+#BCD 9: X = 1001
+force X b"1001"
+run 100
+
+# don't care
+force X b"1010"
+run 100

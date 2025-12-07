@@ -1,0 +1,34 @@
+vlib work
+vmap work work
+
+vcom D:/FPGA/Lab7/lab7_part3/MUX4bit4to1.vhd
+
+vsim -voptargs="+acc" work.MUX4bit4to1
+
+add wave *
+
+
+# Set test inputs
+force U b"0001"
+force V b"0010"
+force W b"0100"
+force X b"1000"
+
+# S = 00 ? M = U
+force S b"00"
+run 10
+
+# S = 01 ? M = W
+force S b"01"
+run 10
+
+# S = 10 ? M = V
+force S b"10"
+run 10
+
+# S = 11 ? M = X
+force S b"11"
+run 10
+
+# Continue run for viewing
+run 20
