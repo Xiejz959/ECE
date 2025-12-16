@@ -1,0 +1,29 @@
+quit -sim
+
+cd D:/FPGA/Lab8/lab8_part4
+
+vlib work
+vmap work work
+
+vcom Full_Adder.vhd
+vcom ripple_full_adder.vhd
+
+vsim work.ripple_full_adder
+
+view wave
+radix binary
+
+add wave *
+
+force A "00000000" 0ns
+force B "00000000" 0ns
+force Cin 0 0ns
+run 100ns
+
+force A "01010101" 100ns
+force B "10101010" 100ns
+force Cin 0 100ns
+run 100ns
+
+force Cin 1 200ns
+run 80ns
