@@ -6,18 +6,19 @@ struct Weather{
     double LowTemperature;
     double AverageTemperature;
 };
+
+enum Month{JANUARY=0,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER,MONTH_COUNT};
 int main()
 {
-    Weather month[12];
+    Weather month[MONTH_COUNT];
     double totalRainfall=0.0;
     double avgRainfall=0.0;
     double AverageTemperature=0.0;
-    double highestTemperature=0;
-    double lowestTemperature=0;
-    int high=0,low=0;
-    for(int i=0;i<12;i++)
+    double highestTemperature=-200;
+    double lowestTemperature=150;
+    for(Month m=JANUARY; m<MONTH_COUNT; m=Month(m+1))
     {
-        
+        int i = static_cast<int>(m);
         cout<<"Enter the data of month "<<i+1<<endl;
         cout<<"Rainfall: ";
         cin>>month[i].rainfall;
@@ -28,7 +29,7 @@ int main()
         if(month[i].HighTemperature< -100 || month[i].HighTemperature>140 || month[i].LowTemperature< -100 || month[i].LowTemperature>140)
         {
             cout<<"Error: Temperature out of range."<<endl;
-            i--;
+            m = Month(m-1);
             continue;
         }
         month[i].AverageTemperature=(month[i].HighTemperature+month[i].LowTemperature)/2.0;
@@ -42,25 +43,18 @@ int main()
         else
         {
             if(month[i].HighTemperature>highestTemperature)
-            {
                 highestTemperature=month[i].HighTemperature;
-                high=i;
-            }  
             if(month[i].LowTemperature<lowestTemperature)
-            {
                 lowestTemperature=month[i].LowTemperature;
-                low=i;
-            }
-                
         }
     }
-    avgRainfall=totalRainfall/12.0;
-    AverageTemperature/=12.0;
+    avgRainfall=totalRainfall/static_cast<double>(MONTH_COUNT);
+    AverageTemperature/=static_cast<double>(MONTH_COUNT);
     cout<<fixed<<setprecision(2);
     cout<<"Total Rainfall: "<<totalRainfall<<" inches"<<endl;
     cout<<"Average Monthly Rainfall: "<<avgRainfall<<" inches"<<endl;
     cout<<"Average of Average Monthly Temperatures: "<<AverageTemperature<<" F"<<endl;
-    cout<<"Highest Temperature: "<<highestTemperature<<" F"<<" in month "<< high+1<<endl;
-    cout<<"Lowest Temperature: "<<lowestTemperature<<" F"<<" in month "<< low+1<<endl;
+    cout<<"Highest Temperature: "<<highestTemperature<<" F"<<endl;
+    cout<<"Lowest Temperature: "<<lowestTemperature<<" F"<<endl;
     return 0;
 }
